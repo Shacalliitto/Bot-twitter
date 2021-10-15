@@ -13,9 +13,13 @@ const tadeuBot = new Twit({
     timeout_ms: 60 * 1000
 });
 
+var tweets = ["Ainda não", "Não", "Acorda nunca", "Nada ainda", "Talvez mais tarde", "'Fui dormir 6 da manhã'"]
+
+var pickOne = tweets[Math.floor(Math.random() * tweets.length)];
+
 function acaoDoNossoBot() {
 
-    var postTweet = "Ainda não";
+    var postTweet = pickOne;
     tadeuBot.post(
        
        'statuses/update', 
@@ -36,4 +40,4 @@ function acaoDoNossoBot() {
 
  acaoDoNossoBot();
 
- setInterval(acaoDoNossoBot, 14400000);
+ setInterval(acaoDoNossoBot, 1800000);
