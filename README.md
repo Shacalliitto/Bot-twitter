@@ -1,4 +1,4 @@
-# [Bot do Twitter](https://twitter.com/tadeuacordou).
+# [Twitter Bot](https://twitter.com/tadeuacordou).
 
 Bot do twitter para estudos sobre host de aplicações e sobre APIs.
 
