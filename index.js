@@ -13,7 +13,7 @@ const tadeuBot = new Twit({
     timeout_ms: 60 * 1000
 });
 
-var tweets = ["Ainda não", "Não", "Acorda nunca", "Nada ainda", "Talvez mais tarde", "'Fui dormir 6 da manhã'"]
+var tweets = ["Ainda não", "Não", "Acorda nunca", "Nada ainda", "Talvez mais tarde", '"Fui dormir 6 da manhã"', "Só dorme", "Tá dormindo", "Não dormi essa noite"]
 
 var pickOne = tweets[Math.floor(Math.random() * tweets.length)];
 
@@ -32,8 +32,7 @@ function acaoDoNossoBot() {
              return false;
           }
    
-          console.log("Tweet postado com sucesso!\n");       
-  
+          console.log(pickOne);  
        }
     )
  }
