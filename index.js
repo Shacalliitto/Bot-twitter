@@ -39,4 +39,4 @@ function acaoDoNossoBot() {
 
  acaoDoNossoBot();
 
- setInterval(acaoDoNossoBot, 1800000);
+ setInterval(acaoDoNossoBot, 3600000);
